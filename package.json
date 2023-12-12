@@ -1,0 +1,28 @@
+{
+  "name": "online-bookshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/app.ts",
+    "dev": "nodemon src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.1.14",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^4.17.21",
+    "@types/pg": "^8.10.9",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2"
+  }
+}

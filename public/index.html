@@ -1,0 +1,61 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="register-form">
+            <h2>Register</h2>
+            <form id="registration-form">
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" required>
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" required>
+                <button type="button" onclick="registerUser()">Register</button>
+            </form>
+            <div id="reg-error" class="error"></div>
+        </div>
+
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="button" onclick="loginUser()">Login</button>
+            </form>
+            <div id="login-error" class="error"></div>
+        </div>
+    </div>
+
+    <div id="book-list">
+        <h2>Book List</h2>
+        <ul id="books"></ul>
+      </div>
+      
+      <div id="search-form">
+        <h2>Search Books</h2>
+        <input type="text" id="search-input" placeholder="Enter tag...">
+        <button onclick="searchBooks()">Search</button>
+        <ul id="search-results"></ul>
+      </div>
+      
+      <div id="book-details">
+        <h2>Book Details</h2>
+        <ul id="details"></ul>
+      </div>
+      
+      <script src="app.js"></script>
+      </body>
+      </html>
+
+    <script src="app.js"></script>
+</body>
+</html>
